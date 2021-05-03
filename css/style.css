@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: 2s ease-in-out;
+}
+
+.container {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  z-index: 0;
+}
+
+.smaller{
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.time {
+  cursor: default;
+  font-size: 8rem;
+  line-height: 70px;
+  text-shadow: 1px 1px 450px black;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 70px black;
+  cursor: default;
+}
+
+h2 {
+  cursor: default;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 50px black;
+
+}
+
+.name {
+  cursor: text;
+}
+
+.focus {
+  margin-bottom: 60px;
+  cursor: text;
+}
+
+.iconAndTemp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.forMargin {
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 5rem;
+    line-height: 30px;
+  }
+  .smaller {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+  }
+
+  .changeImage{
+    font-size: 14px;
+  }
+
+  .dayMeme{
+    font-size: 14px;
+  }
+
+  #quote {
+    font-size: 14px;
+  }
+
+  .focus {
+    margin-bottom: 20px;
+  }
+
+  .city {  
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .weather-description {
+    width: 150px;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
+
+.changeImage {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px black;
+  opacity: 90%;
+  transition: 0.5s;
+}
+
+.dayMeme {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px black;
+  opacity: 90%;
+  transition: 0.5s;
+}
+
+.changeImage:hover {
+  opacity: 100%;
+  font-size: 17px;
+}
+
+.dayMeme:hover {
+  opacity: 100%;
+  font-size: 17px;
+}
+
+.image {
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  transition: 1s;
+  object-fit: cover;
+}
+
+.image2 {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  transition: 1s;
+  object-fit: cover;
+}
+
+
+#quote {
+  cursor: default;
+  position: absolute;
+  margin-left: 100%;
+  margin-right: 100%;
+  width: 300px;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+.city {  
+  width: 150px;
+  padding: 10px 0;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #44aadd;
+  font-weight: bold;
+  transition: 0.8s;
+}
+.temperature {    
+  cursor: default;
+  font-size: 26px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+.weather-description {
+  cursor: default;
+  width: 200px;
+  margin: 2px auto;
+  font-size: 18px;
+  padding: 12px 0;
+  color: #ffffff;
+  background-color:#44aadd;
+  border-radius: 5px;
+}
+.weather-icon {
+  font-size: 80px;
+  color: #44aadd;
+
+}
+
+.city:hover {
+  font-size: larger;
+}
+.weather-icon:hover {
+  animation: shake 1.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}

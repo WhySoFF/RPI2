@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="E:\Sites\Whymentum\css\owfont-regular.css">
+  <link rel="stylesheet" href="E:\Sites\Whymentum\css\style.css" />
+  <title>Whymentum</title>
+</head>
+<body>
+  <img id="imgBg" class="image" alt="first" src="">
+  <img id="imgBg2" class="image2" alt="second" src="">
+  <div class="container">
+    <div class="changeImage" onclick="increaseCounter()">Change Image</div>
+    <time class="time"></time>
+    <h1 class="forMargin">
+      <span class="greeting"></span>
+      <span class="name" onclick="if(name.textContent == '[Enter Name]'){name.textContent = ''}" contenteditable="true"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 class="focus" onclick="if(focusS.textContent == '[Enter Focus]'){focusS.textContent = ''}" contenteditable="true"></h2>
+    
+    <div class="city" contenteditable="true">Минск</div>
+    <div class="iconAndTemp">
+      <i class="weather-icon owf"></i>
+      <div class="temperature"></div>
+    </div>
+    <div class="weather-description"></div>
+
+    <script src="E:\Sites\Whymentum\js\script.js"></script>
+    <div class="dayMeme" onclick="changeMeme()">Change Quote</div>
+    <div id="quote"><script>changeMeme();</script></div>
+
+
+    
+
+
+  </div>
+  
+</body>
+</html>
